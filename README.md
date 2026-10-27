@@ -1,14 +1,23 @@
 # Free PDF & Print Tools Directory
 
-No-account, free tools for merging, splitting, compressing, signing, filling forms, large print, and ebook conversion. No affiliate links.
+Free, no-account tools for merging, splitting, compressing, signing, filling forms, large print, and converting PDFs to ebook formats. No affiliate links. Ever.
 
-Brought to you by **Asdale Dynamics, LLC** — beginner-friendly AI education, books, guides, and practical tools.
+Brought to you by **Asdale Dynamics, LLC** — plain-English AI education, books, guides, and practical tools for beginners.
 
-## How to use
+This directory is for anyone who needs to get a simple PDF job done without creating an account, paying a fee, or hunting through fine print. Every tool listed here works without signing up, and every listing shows you exactly what it costs, what platform it runs on, the steps to use it, and a link to the official site.
 
-Open `index.html` in any browser. Use the search box and category chips to filter the directory. Each listing shows cost, platform, steps, and an official link.
+---
 
-The site is static HTML with client-side search — no build step, no server, no account required.
+## How to use this directory
+
+1. Open `index.html` in any web browser.
+2. Type in the search box to find tools by name, platform, or what they do.
+3. Click a category chip (Merge, Split, Compress, Sign, Fill forms, Large print, Ebook conversion) to see just that kind of tool.
+4. Click "Official site" on any listing to go straight to the tool's homepage.
+
+Nothing installs, nothing requires an email address, and the whole site runs in your browser from a single data file (`tools.json`). If you're working with sensitive paperwork, prefer the desktop or command-line tools listed under each category — they stay on your computer.
+
+---
 
 ## Tools
 
@@ -194,10 +203,18 @@ The site is static HTML with client-side search — no build step, no server, no
 - Steps: Open your converted EPUB in Sigil · Fix formatting, add a cover image, and edit book metadata · Save the EPUB and check it in an ereader app
 - Official: https://sigil-ebook.com/
 
-## License
-
-MIT License. Copyright (c) 2026 Asdale Dynamics, LLC. See LICENSE.
+---
 
 ## About
 
-This directory is published by Asdale Dynamics, LLC (Indiana, formed October 2026), founded by Dylan Asdale — registered nurse turned AI author. No affiliate links, no accounts, no tracking.
+This directory is published by **Asdale Dynamics, LLC** (Indiana, formed October 2026).
+
+Asdale Dynamics was founded by Dylan Asdale, a registered nurse turned AI author. His book *The Massive AI Manual* and hub site dylanasdale.github.io explain AI "like a friend would": plain English, step by step, never condescending.
+
+The LLC focuses on beginner-friendly AI education, books and guides, and practical tools — including directories like this one that make everyday digital tasks easier.
+
+No affiliate links. No accounts. No tracking.
+
+## License
+
+MIT License. Copyright (c) 2026 Asdale Dynamics, LLC. See LICENSE.

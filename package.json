@@ -1,0 +1,11 @@
+{
+  "name": "free-pdf-and-print-tools-directory",
+  "version": "1.0.0",
+  "description": "No-account free PDF/print tools directory: Markdown + static HTML with client-side search.",
+  "private": true,
+  "scripts": {
+    "test": "node verify.js",
+    "start": "python3 -m http.server 18080"
+  },
+  "license": "MIT"
+}

@@ -56,6 +56,12 @@ main {
   align-items: center;
 }
 
+.toolbar label {
+  font-size: 0.9rem;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
 #search {
   flex: 1 1 260px;
   min-width: 220px;
