@@ -1,0 +1,427 @@
+{
+  "site": {
+    "title": "Free PDF & Print Tools Directory",
+    "owner": "Asdale Dynamics, LLC",
+    "description": "No-account, free tools for merge, split, compress, sign, fill forms, large print, and ebook conversion. No affiliate links.",
+    "year": 2026
+  },
+  "categories": [
+    { "key": "merge", "label": "Merge PDFs" },
+    { "key": "split", "label": "Split PDFs" },
+    { "key": "compress", "label": "Compress PDFs" },
+    { "key": "sign", "label": "Sign PDFs" },
+    { "key": "fill-forms", "label": "Fill PDF Forms" },
+    { "key": "large-print", "label": "Large Print" },
+    { "key": "ebook-conversion", "label": "Convert to Ebook Formats" }
+  ],
+  "tools": [
+    {
+      "id": "pdf24-merge",
+      "name": "PDF24 Tools — Merge PDF",
+      "category": "merge",
+      "cost": "Free — no account required",
+      "platform": "Web (any browser); optional Windows desktop tool",
+      "steps": [
+        "Open the PDF24 Merge PDF tool.",
+        "Drag your PDFs into the drop zone, or click to choose files.",
+        "Drag files to reorder them, then click Merge PDF.",
+        "Download the merged PDF."
+      ],
+      "officialLink": "https://tools.pdf24.org/en/merge-pdf",
+      "about": "Browser-based merger. Uploaded files are deleted from PDF24's servers after a short time."
+    },
+    {
+      "id": "ilovepdf-merge",
+      "name": "iLovePDF — Merge PDF",
+      "category": "merge",
+      "cost": "Free tier — no account required for basic use",
+      "platform": "Web (any browser)",
+      "steps": [
+        "Open iLovePDF Merge PDF.",
+        "Select your PDFs or drag them into the drop zone.",
+        "Click Merge PDF.",
+        "Download the merged PDF."
+      ],
+      "officialLink": "https://www.ilovepdf.com/merge_pdf",
+      "about": "Free tier merges files without an account; daily usage limits apply."
+    },
+    {
+      "id": "qpdf-merge",
+      "name": "qpdf — Merge (command line)",
+      "category": "merge",
+      "cost": "Free and open source — no account required",
+      "platform": "Windows, Mac, Linux (command line)",
+      "steps": [
+        "Install qpdf (brew install qpdf, apt install qpdf, or the Windows installer).",
+        "Run: qpdf --empty --pages file1.pdf file2.pdf -- merged.pdf",
+        "Find merged.pdf in the same folder."
+      ],
+      "officialLink": "https://qpdf.sourceforge.io/",
+      "about": "Lightweight CLI for structural PDF changes. Great for scripting and batch work."
+    },
+    {
+      "id": "pdftk-merge",
+      "name": "pdftk / pdftk-java — Merge (command line)",
+      "category": "merge",
+      "cost": "Free — no account required",
+      "platform": "Windows, Mac, Linux (command line)",
+      "steps": [
+        "Install pdftk-java (the maintained rebuild of pdftk).",
+        "Run: pdftk file1.pdf file2.pdf cat output merged.pdf",
+        "Find merged.pdf in the same folder."
+      ],
+      "officialLink": "https://gitlab.com/pdftk-java/pdftk",
+      "about": "Classic PDF toolkit. pdftk-java keeps the original pdftk command working on modern systems."
+    },
+    {
+      "id": "pdfarranger-merge",
+      "name": "PDF Arranger — Merge & Rearrange Pages",
+      "category": "merge",
+      "cost": "Free and open source — no account required",
+      "platform": "Linux desktop (Flathub / package manager)",
+      "steps": [
+        "Install PDF Arranger from Flathub or your package manager.",
+        "Drag PDFs into the left sidebar.",
+        "Drag pages between files to reorder them.",
+        "Save the result as a new PDF."
+      ],
+      "officialLink": "https://github.com/pdfarranger/pdfarranger",
+      "about": "Graphical tool for merging, splitting, rotating, and cropping PDF pages."
+    },
+    {
+      "id": "pdf24-split",
+      "name": "PDF24 Tools — Split PDF",
+      "category": "split",
+      "cost": "Free — no account required",
+      "platform": "Web (any browser)",
+      "steps": [
+        "Open the PDF24 Split PDF tool.",
+        "Upload your PDF.",
+        "Choose extract page ranges or split into single pages, then click Split.",
+        "Download the split files (or the ZIP)."
+      ],
+      "officialLink": "https://tools.pdf24.org/en/split-pdf",
+      "about": "Browser-based splitter. Uploaded files are deleted from PDF24's servers after a short time."
+    },
+    {
+      "id": "ilovepdf-split",
+      "name": "iLovePDF — Split PDF",
+      "category": "split",
+      "cost": "Free tier — no account required for basic use",
+      "platform": "Web (any browser)",
+      "steps": [
+        "Open iLovePDF Split PDF.",
+        "Upload your PDF and choose how to split it.",
+        "Click Split PDF.",
+        "Download the results."
+      ],
+      "officialLink": "https://www.ilovepdf.com/split_pdf",
+      "about": "Free tier splits files without an account; daily usage limits apply."
+    },
+    {
+      "id": "qpdf-split",
+      "name": "qpdf — Split (command line)",
+      "category": "split",
+      "cost": "Free and open source — no account required",
+      "platform": "Windows, Mac, Linux (command line)",
+      "steps": [
+        "Install qpdf.",
+        "Run: qpdf --pages input.pdf 1-5,6-10 -- part.pdf",
+        "Or run: qpdf --split-pages input.pdf page to split every page into its own file."
+      ],
+      "officialLink": "https://qpdf.sourceforge.io/",
+      "about": "Fast CLI splitting by page range."
+    },
+    {
+      "id": "pdftk-split",
+      "name": "pdftk / pdftk-java — Burst / Split (command line)",
+      "category": "split",
+      "cost": "Free — no account required",
+      "platform": "Windows, Mac, Linux (command line)",
+      "steps": [
+        "Install pdftk-java.",
+        "Run: pdftk input.pdf burst",
+        "Pages are saved as pg_0001.pdf, pg_0002.pdf, etc.",
+        "To grab a range: pdftk input.pdf cat 1-5 output part.pdf"
+      ],
+      "officialLink": "https://gitlab.com/pdftk-java/pdftk",
+      "about": "burst splits a PDF into one file per page; cat selects page ranges."
+    },
+    {
+      "id": "pdfarranger-split",
+      "name": "PDF Arranger — Delete / Extract Pages",
+      "category": "split",
+      "cost": "Free and open source — no account required",
+      "platform": "Linux desktop (Flathub / package manager)",
+      "steps": [
+        "Install PDF Arranger from Flathub or your package manager.",
+        "Open your PDF.",
+        "Select pages to delete or drag them out into a new file.",
+        "Save the result."
+      ],
+      "officialLink": "https://github.com/pdfarranger/pdfarranger",
+      "about": "Visual page manager for splitting PDFs by hand."
+    },
+    {
+      "id": "pdf24-compress",
+      "name": "PDF24 Tools — Compress PDF",
+      "category": "compress",
+      "cost": "Free — no account required",
+      "platform": "Web (any browser)",
+      "steps": [
+        "Open the PDF24 Compress PDF tool.",
+        "Upload your PDF and pick a compression strength.",
+        "Click Compress PDF.",
+        "Download the smaller PDF."
+      ],
+      "officialLink": "https://tools.pdf24.org/en/compress-pdf",
+      "about": "Browser-based compressor. Uploaded files are deleted from PDF24's servers after a short time."
+    },
+    {
+      "id": "ilovepdf-compress",
+      "name": "iLovePDF — Compress PDF",
+      "category": "compress",
+      "cost": "Free tier — no account required for basic use",
+      "platform": "Web (any browser)",
+      "steps": [
+        "Open iLovePDF Compress PDF.",
+        "Upload your PDF and choose a compression level.",
+        "Click Compress PDF.",
+        "Download the compressed file."
+      ],
+      "officialLink": "https://www.ilovepdf.com/compress_pdf",
+      "about": "Free tier compresses files without an account; daily usage limits apply."
+    },
+    {
+      "id": "ghostscript-compress",
+      "name": "Ghostscript — Compress (command line)",
+      "category": "compress",
+      "cost": "Free and open source — no account required",
+      "platform": "Windows, Mac, Linux (command line)",
+      "steps": [
+        "Install Ghostscript (gs).",
+        "Run: gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=compressed.pdf input.pdf",
+        "Use /screen for smallest files, /ebook for balanced, /prepress for highest quality."
+      ],
+      "officialLink": "https://ghostscript.com/",
+      "about": "Industry-standard CLI for PDF compression and conversion."
+    },
+    {
+      "id": "sejda-compress",
+      "name": "Sejda — Compress PDF",
+      "category": "compress",
+      "cost": "Free tier (3 tasks per hour, up to 200 pages) — no account required",
+      "platform": "Web (any browser)",
+      "steps": [
+        "Open Sejda Compress PDF.",
+        "Upload your PDF and choose a compression level.",
+        "Click Compress PDF.",
+        "Download the compressed file."
+      ],
+      "officialLink": "https://www.sejda.com/compress-pdf",
+      "about": "Free daily limits apply; no account needed for basic use."
+    },
+    {
+      "id": "pdf24-sign",
+      "name": "PDF24 Tools — Sign PDF",
+      "category": "sign",
+      "cost": "Free — no account required",
+      "platform": "Web (any browser)",
+      "steps": [
+        "Open the PDF24 Sign PDF tool.",
+        "Upload your PDF and add your signature (draw, type, or upload an image).",
+        "Place the signature on the page, then click Sign.",
+        "Download the signed PDF."
+      ],
+      "officialLink": "https://tools.pdf24.org/en/sign-pdf",
+      "about": "Adds a visual signature to pages. Uploaded files are deleted from PDF24's servers after a short time."
+    },
+    {
+      "id": "libreoffice-sign",
+      "name": "LibreOffice Draw — Sign & Fill",
+      "category": "sign",
+      "cost": "Free and open source — no account required",
+      "platform": "Windows, Mac, Linux (desktop)",
+      "steps": [
+        "Open the PDF in LibreOffice Draw.",
+        "Insert > Image to place a scanned signature, or draw with the toolbar tools.",
+        "File > Export as PDF to save the signed file.",
+        "Close and keep the exported PDF."
+      ],
+      "officialLink": "https://www.libreoffice.org/",
+      "about": "Desktop office suite that can open, annotate, sign, and re-export PDFs."
+    },
+    {
+      "id": "masterpdf-editor-sign",
+      "name": "Master PDF Editor (free version) — Sign",
+      "category": "sign",
+      "cost": "Free for non-commercial use — no account required",
+      "platform": "Windows, Mac, Linux (desktop)",
+      "steps": [
+        "Download and install the free version of Master PDF Editor.",
+        "Open your PDF and place a signature with the annotation tools.",
+        "Save the signed PDF."
+      ],
+      "officialLink": "https://code-industry.net/masterpdfeditor/",
+      "about": "The free version is for non-commercial use and includes viewing, filling, and signing."
+    },
+    {
+      "id": "xodo-sign",
+      "name": "Xodo — Fill & Sign Online",
+      "category": "sign",
+      "cost": "Free — no account required for basic use",
+      "platform": "Web (any browser)",
+      "steps": [
+        "Open Xodo's online PDF tools.",
+        "Upload your PDF and add a signature or initials.",
+        "Place them on the page, then download the signed file."
+      ],
+      "officialLink": "https://xodo.com/",
+      "about": "Free online viewer with fill-and-sign features; account optional."
+    },
+    {
+      "id": "browser-fill",
+      "name": "Firefox / Chrome / Edge — Fill PDF Forms (built in)",
+      "category": "fill-forms",
+      "cost": "Free — no account required",
+      "platform": "Desktop browser (built-in viewer)",
+      "steps": [
+        "Open the PDF in Firefox, Chrome, or Edge.",
+        "Click each form field and type your answers.",
+        "Print or choose Save as PDF to keep your filled copy.",
+        "Note: this works on fillable forms; flat PDFs need LibreOffice Draw or PDF24."
+      ],
+      "officialLink": "https://www.mozilla.org/firefox/",
+      "about": "Every modern browser can fill fillable PDF forms and save or print the result."
+    },
+    {
+      "id": "libreoffice-fill",
+      "name": "LibreOffice Draw — Fill PDF Forms",
+      "category": "fill-forms",
+      "cost": "Free and open source — no account required",
+      "platform": "Windows, Mac, Linux (desktop)",
+      "steps": [
+        "Open the PDF in LibreOffice Draw.",
+        "Click form fields to type, or insert text boxes on flat PDFs.",
+        "File > Export as PDF to save the filled file."
+      ],
+      "officialLink": "https://www.libreoffice.org/",
+      "about": "Good for forms that browsers can't handle, plus adding text to any page."
+    },
+    {
+      "id": "pdftk-fill",
+      "name": "pdftk / pdftk-java — Fill Forms (command line)",
+      "category": "fill-forms",
+      "cost": "Free — no account required",
+      "platform": "Windows, Mac, Linux (command line)",
+      "steps": [
+        "Export an FDF data file from the form, or write one by hand.",
+        "Run: pdftk form.pdf fill_form data.fdf output filled.pdf",
+        "Check filled.pdf for your entered values."
+      ],
+      "officialLink": "https://gitlab.com/pdftk-java/pdftk",
+      "about": "Batch-fills form fields from an FDF data file without opening a GUI."
+    },
+    {
+      "id": "sejda-fill",
+      "name": "Sejda — Fill & Sign PDF Forms",
+      "category": "fill-forms",
+      "cost": "Free tier — no account required for basic use",
+      "platform": "Web (any browser)",
+      "steps": [
+        "Open Sejda's Fill and Sign PDF tool.",
+        "Upload your PDF, type into fields, and add a signature if needed.",
+        "Click Apply, then download the filled PDF."
+      ],
+      "officialLink": "https://www.sejda.com/",
+      "about": "Online form filling with free daily limits; no account needed for basic use."
+    },
+    {
+      "id": "browser-largeprint",
+      "name": "Browser Print — Large Print via Scale",
+      "category": "large-print",
+      "cost": "Free — no account required",
+      "platform": "Desktop browser (built-in print dialog)",
+      "steps": [
+        "Open the PDF in Firefox, Chrome, or Edge.",
+        "Press Ctrl+P (or Cmd+P on Mac) to open Print.",
+        "Set Scale / Custom to 150% or 200%, and pick your paper size.",
+        "Print, or choose Save as PDF to create a large-print copy."
+      ],
+      "officialLink": "https://www.mozilla.org/firefox/",
+      "about": "The fastest no-install way to make a large-print copy of any PDF."
+    },
+    {
+      "id": "pdf24-largeprint",
+      "name": "PDF24 Tools — Scale / Resize Pages",
+      "category": "large-print",
+      "cost": "Free — no account required",
+      "platform": "Web (any browser)",
+      "steps": [
+        "Open the PDF24 Scale PDF tool.",
+        "Upload your PDF and enter a scale percentage (for example 140% for large print).",
+        "Click Scale, then download the enlarged pages."
+      ],
+      "officialLink": "https://tools.pdf24.org/en/scale-pdf",
+      "about": "Permanently scales pages up so every printout is large print."
+    },
+    {
+      "id": "ghostscript-largeprint",
+      "name": "Ghostscript — Large Print Rescale (command line)",
+      "category": "large-print",
+      "cost": "Free and open source — no account required",
+      "platform": "Windows, Mac, Linux (command line)",
+      "steps": [
+        "Install Ghostscript (gs).",
+        "Run: gs -sDEVICE=pdfwrite -dDEVICEWIDTHPOINTS=1224 -dDEVICEHEIGHTPOINTS=1584 -dPDFFitPage -dNOPAUSE -dQUIET -dBATCH -sOutputFile=largeprint.pdf input.pdf",
+        "That scales US Letter up to about 150% (1224 x 1584 points). Adjust dimensions for other sizes."
+      ],
+      "officialLink": "https://ghostscript.com/",
+      "about": "CLI approach for batch large-print rescaling of many PDFs."
+    },
+    {
+      "id": "calibre-ebook",
+      "name": "Calibre — Convert PDF to EPUB / MOBI / AZW3",
+      "category": "ebook-conversion",
+      "cost": "Free and open source — no account required",
+      "platform": "Windows, Mac, Linux (desktop)",
+      "steps": [
+        "Install Calibre.",
+        "Add your PDF to the Calibre library.",
+        "Select the book, click Convert books, and choose EPUB, MOBI, or AZW3 as the output format.",
+        "Save to disk or send to your ereader."
+      ],
+      "officialLink": "https://calibre-ebook.com/",
+      "about": "The most popular free ebook manager; handles PDF-to-ebook conversion with metadata and cover support."
+    },
+    {
+      "id": "libreoffice-ebook",
+      "name": "LibreOffice Writer — Open PDF, Export EPUB",
+      "category": "ebook-conversion",
+      "cost": "Free and open source — no account required",
+      "platform": "Windows, Mac, Linux (desktop)",
+      "steps": [
+        "Open the PDF in LibreOffice Writer.",
+        "Fix text and layout as needed.",
+        "File > Export As > Export as EPUB.",
+        "Save the EPUB file."
+      ],
+      "officialLink": "https://www.libreoffice.org/",
+      "about": "Simple route from PDF to EPUB for text-heavy documents."
+    },
+    {
+      "id": "sigil-ebook",
+      "name": "Sigil — EPUB Editor (clean up converted ebooks)",
+      "category": "ebook-conversion",
+      "cost": "Free and open source — no account required",
+      "platform": "Windows, Mac, Linux (desktop)",
+      "steps": [
+        "Open your converted EPUB in Sigil.",
+        "Fix formatting, add a cover image, and edit book metadata.",
+        "Save the EPUB and check it in an ereader app."
+      ],
+      "officialLink": "https://sigil-ebook.com/",
+      "about": "WYSIWYG EPUB editor for polishing ebooks after conversion."
+    }
+  ]
+}
